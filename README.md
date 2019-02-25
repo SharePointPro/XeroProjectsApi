@@ -11,10 +11,11 @@ Xero Projects API documentation can be found here: https://developer.xero.com/do
 
 Usage: 
 ```
-\\Create Project
+//Create a Xero Project via a HTTP POST call
 var projectHttpClient = new ProjectsHttpClient("<PUBLIC KEY>", @"<CERT PATH>", "<CERT PASSWORD>");
-var Json = "{ name: "Example Project", contactId: "0000457b-ce16-44cc-9ee3-fea5a2c0000" };
-projectHttpClient.HttpPost(jsonString);
+var json = "{ name: "Example Project", contactId: "0000457b-ce16-44cc-9ee3-fea5a2c0000" };
+//Make standard POST call with Xero Projects Auth Signature 
+var postResponse = projectHttpClient.HttpPost(json);
 ```
 
 In the future I will create contract C# clases which will be serialize into JSON.
