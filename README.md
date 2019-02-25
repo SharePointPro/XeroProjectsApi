@@ -13,7 +13,7 @@ Usage:
 ```
 //Create a Xero Project via a HTTP POST call
 var projectHttpClient = new ProjectsHttpClient("<PUBLIC KEY>", @"<CERT PATH>", "<CERT PASSWORD>");
-var json = "{ name: "Example Project", contactId: "0000457b-ce16-44cc-9ee3-fea5a2c0000" };
+var json = "{ name: \"Example Project\", contactId: \"0000457b-ce16-44cc-9ee3-fea5a2c0000\" }";
 //Make standard POST call with Xero Projects Auth Signature 
 var postResponse = projectHttpClient.HttpPost(json);
 ```
