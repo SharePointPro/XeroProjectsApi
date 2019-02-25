@@ -12,7 +12,7 @@ Xero Projects API documentation can be found here: https://developer.xero.com/do
 Usage: 
 ```
 \\Create Project
-var projectHttpClient = new ProjectsHttpClient("<PUBLIC KEY>", @"<PASS TO CERTIFICATE PFX FILE>", "<CERTIFICATE PASSWORD>");
+var projectHttpClient = new ProjectsHttpClient("<PUBLIC KEY>", @"<CERT PATH>", "<CERT PASSWORD>");
 var Json = "{ name: "Example Project", contactId: "0000457b-ce16-44cc-9ee3-fea5a2c0000" };
 projectHttpClient.HttpPost(jsonString);
 ```
